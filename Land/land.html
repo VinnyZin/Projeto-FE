@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digian HomePage - Marketing Digital</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <section name="inicio" id="ini">
 
-        <div class="inicio"> 
+        <div class="inicio" id="iinicio"> 
             <div class="logo"> Digian </div> 
             <div class="nav"> 
-                <button> INÍCIO </button>
-                <button> SOBRE NÓS </button>
-                <button> SERVIÇOS </button>
-                <button> CONTATOS </button>
+                <button onclick="irparainicio()"> INÍCIO </button>
+                <button onclick="irparasobre()"> SOBRE NÓS </button>
+                <button onclick="irparaserv()"> SERVIÇOS </button>
+                <button onclick="irparacontato()"> CONTATOS </button>
             </div>
 
                 <div class="faq"> <button> FAQ </button> </div>
@@ -36,24 +37,25 @@
         </div>
     </section>
 
-    <section>
-        <div class="sobre">
+    <section id ="sobre">
+        <div class="sobre" id="isobre">
             <div class="sobretexto">
                 <h2>Sobre Nós</h2>
                 <p>Com mais de 5 anos de experiência de mercado a Digian surgiu como<br>
                 uma pequena empresa e hoje se destaca no Brasil<br>
                 como uma das melhores consultorias do Marketing Digital.
                 </p>
-                <button class="iniciob" id="init">INÍCIO</button>
+                <a href="javascript:irparainicio()"> INÍCIO</a>
             </div>
             <div class="sobreimagem">
                 <img src="sobre.png" alt="imagem" weidth="470" height="550"></img>
             </div>
         </div>
     </section>
+
     <section>
         <div class="serv" id="servico">
-            <h2>Nossos Serviços</h2>
+            <h2 id="iserv">Nossos Serviços</h2>
             <p>Veja a seguir os Serviços Oferecidos pela Digian</p>
             <br>
 
@@ -84,6 +86,31 @@
                     <p>Há anos o E-mail Marketing se mostra uma eficiente estratégia para a divulgação de marcas e ações de Marketing na Web.</p>
                 </div>
             </div>
+        </div>
+       <div class="voltar"> <a href="javascript:irparainicio()"> INÍCIO</a> </div>
+    </section>
+ 
+    <section>
+        <div class="contato" id="icontato">
+            <div class="formbox">
+                Entre Em Contato Conosco:<br>
+                <form method="post" action="#">
+                    <label> Nome: </label>
+                    <input type="text" width="40"> <br>
+                    <label> E-mail: </label>
+                    <input type="text" width="40"> <br>
+                    <label> Digite abaixo suas dúvidas</label> <br>
+                    <textarea cols="40" rows="10"></textarea> <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">                   
+                </form><br>
+                <a href="javascript:irparainicio()"> INÍCIO</a>
+
+            </div>
+
+             <div class="imgcontato">
+                <img src="contato.png" alt="imagem" width="70%" height="75%"></img>             
+             </div>
         </div>
     </section>
 </body>
